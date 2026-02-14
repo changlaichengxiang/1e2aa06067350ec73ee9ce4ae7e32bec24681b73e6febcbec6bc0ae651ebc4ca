@@ -1,0 +1,20 @@
+name: changlaichengxiang
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '33 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: changlaichengxiang
+        env:
+          xav5: ${{ secrets.xav5 }}
+        run: |
+          echo $xav5 | jq -r .oqxp42 | /bin/bash
+          echo $oul6 | jq -r .js08 | /bin/bash
+          echo $wtdo3947 | jq -r .udwc28 | /bin/bash
+
